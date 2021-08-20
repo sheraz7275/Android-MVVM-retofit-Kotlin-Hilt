@@ -1,0 +1,1 @@
+class countriesModel : ArrayList<countriesModelItem>()

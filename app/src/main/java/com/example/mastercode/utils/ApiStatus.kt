@@ -1,0 +1,1 @@
+package com.example.mastercode.utilsenum class ApiStatus {    Loading,Error,Success}
