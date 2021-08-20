@@ -1,5 +1,5 @@
 # Implementation-MVVM-retofit-Kotlin
 This is sample of code using MVVM pattern 
 
-#Fuctionality 
+Fuctionality 
 Inludes implementation recycler view , retrofit , livedata , live databinding , lifecyle managment 
