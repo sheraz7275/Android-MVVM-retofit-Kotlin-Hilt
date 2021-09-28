@@ -1,10 +1,13 @@
 package com.example.mastercode.domain
 
 data class CountriesDataModel(
-    val capital: String,
-    val flag: String,
-    val name: String,
-    val nativeName: String,
-    val population: Int,
-    val region: String,
+    val name: Name?,
+    val region: String?,
+    val capital: List<String>?,
+    val flags: List<String>?,
+    val borders: List<String>?
+)
+
+data class Name(
+    val official: String?
 )
