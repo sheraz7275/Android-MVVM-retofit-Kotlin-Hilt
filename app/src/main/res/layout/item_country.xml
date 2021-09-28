@@ -99,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:elevation="10dp"
-                    android:text="@{ mDataModel.name}"
+                    android:text="@{ mDataModel.name.official}"
 
 
 
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:elevation="10dp"
-                    android:text="@{ mDataModel.capital}"
+                    android:text="@{ mDataModel.capital.get(0)}"
 
 
 

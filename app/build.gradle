@@ -1,12 +1,14 @@
+
 plugins {
     id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-}
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'}
 
 android {
     compileSdk 31
     buildToolsVersion "31.0.0"
-
     defaultConfig {
         applicationId "com.example.mastercode"
         minSdk 21
@@ -16,9 +18,6 @@ android {
         multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
-
-
 
     buildFeatures {
         viewBinding true
@@ -30,6 +29,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -80,13 +80,15 @@ dependencies {
     // retrofit support for moshi
     implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
 
+    //dagger hilt
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-compiler:2.38.1"
 
-
-    testImplementation 'junit:junit:4.+'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
 
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
+
+
+
