@@ -29,8 +29,12 @@ class CountriesListFragment : Fragment() {
 
         binding=BlankFragmentBinding.inflate(layoutInflater)
 
-        //val repositoryCountry=RepositoryCountry()
+       /* we do not need view model Factory
+        when we use hilt repo will inject automatically
+        use below line of code without Hilt
+                */
 
+        //val repositoryCountry=RepositoryCountry()
         // viewModelFactory= ViewModelCountryFactory()
 
 
