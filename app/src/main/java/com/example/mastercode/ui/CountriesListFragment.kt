@@ -18,7 +18,7 @@ import dagger.hilt.android.AndroidEntryPoint
 class CountriesListFragment : Fragment() {
 
     private lateinit var binding:BlankFragmentBinding
-   // private lateinit var viewModelFactory: ViewModelCountryFactory
+    private lateinit var viewModelFactory: ViewModelCountryFactory
    private val viewModel: ViewModelCountries by viewModels()
 
 
@@ -35,7 +35,7 @@ class CountriesListFragment : Fragment() {
                 */
 
         //val repositoryCountry=RepositoryCountry()
-        // viewModelFactory= ViewModelCountryFactory()
+        //viewModelFactory= ViewModelCountryFactory(repositoryCountry)
 
 
 
