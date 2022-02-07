@@ -7,7 +7,6 @@ data class CountriesDataModel(
     val flags: List<String>?,
     val borders: List<String>?
 )
-
 data class Name(
     val official: String?
 )

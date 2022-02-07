@@ -15,7 +15,7 @@ import com.example.mastercode.repository.RepositoryCountry
 
 class CountriesListFragment : Fragment() {
 
-    private lateinit var binding:BlankFragmentBinding
+    private lateinit var binding: BlankFragmentBinding
     private lateinit var viewModelFactory: ViewModelCountryFactory
 
 
@@ -25,10 +25,10 @@ class CountriesListFragment : Fragment() {
     ): View? {
 
 
-        binding=BlankFragmentBinding.inflate(layoutInflater)
-        val repositoryCountry=RepositoryCountry()
+        binding = BlankFragmentBinding.inflate(layoutInflater)
+        val repositoryCountry = RepositoryCountry()
 
-        viewModelFactory= ViewModelCountryFactory(repositoryCountry)
+        viewModelFactory = ViewModelCountryFactory(repositoryCountry)
 
         val viewModel: ViewModelCountries by viewModels { viewModelFactory }
 
@@ -37,7 +37,7 @@ class CountriesListFragment : Fragment() {
 
         viewModel.countriesList.observe(viewLifecycleOwner, Observer {
 
-            binding.recCountries.adapter= CountriesAdapter(it)
+            binding.recCountries.adapter = CountriesAdapter(it)
 
         })
 
@@ -45,12 +45,11 @@ class CountriesListFragment : Fragment() {
 
         viewModel.status.observe(viewLifecycleOwner, Observer {
 
-            Toast.makeText(requireContext(),it,Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), it, Toast.LENGTH_SHORT).show()
 
         })
 
         return binding.root
-
 
 
     }

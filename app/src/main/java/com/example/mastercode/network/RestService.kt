@@ -10,7 +10,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
 
-private const val BaseURL="https://restcountries.com/v3/"
+private const val BaseURL = "https://restcountries.com/v3/"
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
     .build()
@@ -21,18 +21,18 @@ private val retrofit = Retrofit.Builder()
     .addConverterFactory(MoshiConverterFactory.create(moshi))
     .build()
 
-interface RestApi{
+interface RestApi {
 
     @GET("all")
-    fun  getCountriesDataAsync():Deferred<List<CountriesDataModel>>
+    fun getCountriesDataAsync(): Deferred<List<CountriesDataModel>>
 
 
 }
 
-object Network{
+object Network {
 
 
-    val networkReq:RestApi by lazy {
+    val networkReq: RestApi by lazy {
         retrofit.create(RestApi::class.java)
     }
 
