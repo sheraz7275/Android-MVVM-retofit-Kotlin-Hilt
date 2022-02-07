@@ -1,4 +1,4 @@
-# Implementation-MVVM-retofit-Kotlin
+# Android-MVVM-Architecher-retofit-Kotlin-Dependency-Injection-Hilt
 This is sample of code using MVVM pattern 
 
 Fuctionality 
