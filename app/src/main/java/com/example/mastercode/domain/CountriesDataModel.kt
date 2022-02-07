@@ -6,8 +6,9 @@ data class CountriesDataModel(
     val capital: List<String>?,
     val flags: List<String>?,
     val borders: List<String>?
-)
+    )
 
 data class Name(
     val official: String?
 )
+

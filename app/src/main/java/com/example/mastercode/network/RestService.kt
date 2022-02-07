@@ -10,7 +10,9 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
 
+/*
 private const val BaseURL="https://restcountries.com/v3/"
+
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
     .build()
@@ -20,6 +22,7 @@ private val retrofit = Retrofit.Builder()
     .baseUrl(BaseURL)
     .addConverterFactory(MoshiConverterFactory.create(moshi))
     .build()
+*/
 
 interface RestApi{
 
@@ -29,6 +32,7 @@ interface RestApi{
 
 }
 
+/*
 object Network{
 
 
@@ -36,4 +40,4 @@ object Network{
         retrofit.create(RestApi::class.java)
     }
 
-}
+}*/
